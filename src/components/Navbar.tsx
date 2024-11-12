@@ -4,12 +4,11 @@ import { logo, menu, close } from "../constants/images";
 import { navLinks } from "../constants";
 const Navbar = () => {
   const [toogle, setToogle] = useState(false);
-
   const handleToogle = () => {
     setToogle((prev) => !prev);
   };
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
+    <nav className={`w-full flex py-6 justify-between items-center`}>
       <img src={logo} alt="hoo bank" className="w-[124px] h-[32px]" />
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
@@ -18,7 +17,7 @@ const Navbar = () => {
             className={`font-poppins font-normal cursor-pointer text-white text-[16px] ${
               index === navLinks.length - 1 ? "mr-0" : "mr-10"
             }`}>
-            <a href={`${nav.id}`}>{nav.title}</a>
+            <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
       </ul>
@@ -43,7 +42,7 @@ const Navbar = () => {
               className={`font-poppins font-normal cursor-pointer text-[16px] m-2 ${
                 index === navLinks.length - 1 ? "mr-0" : "mb-4"
               } text-white`}>
-              <a href={`${nav.id}`}>{nav.title}</a>
+              <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
