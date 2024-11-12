@@ -1,6 +1,17 @@
 import styles from "./styles";
 
-import { Navbar, Hero, Stats } from "./components/index";
+import {
+  Navbar,
+  Hero,
+  Stats,
+  Business,
+  Billing,
+  CardDeal,
+  Testimonials,
+  Clients,
+  CTA,
+  Footer,
+} from "./components/index";
 
 function App() {
   return (
@@ -21,6 +32,13 @@ function App() {
         <div className={` ${styles.paddingX} ${styles.flexCenter} bg-primary`}>
           <div className={`${styles.boxWidth}`}>
             <Stats />
+            <Business />
+            <Billing />
+            <CardDeal />
+            <Testimonials />
+            <Clients />
+            <CTA />
+            <Footer />
           </div>
         </div>
       </div>

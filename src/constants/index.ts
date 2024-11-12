@@ -1,18 +1,18 @@
-import people01 from '../assets/people01.png'
-import people02 from '../assets/people02.png'
-import people03 from '../assets/people03.png'
-import facebook from '../assets/facebook.svg'
-import instagram from '../assets/instagram.svg'
-import linkedin from '../assets/linkedin.svg'
-import twitter from '../assets/twitter.svg'
-import airbnb from '../assets/airbnb.png'
-import binance from '../assets/binance.png'
-import coinbase from '../assets/coinbase.png'
-import dropbox from '../assets/dropbox.png'
-import send from '../assets/Send.svg'
-import shield from '../assets/Shield (1).svg'
-import star from '../assets/Star.svg'
-export const navLinks: {id: string, title:string}[] = [
+import people01 from "../assets/people01.png";
+import people02 from "../assets/people02.png";
+import people03 from "../assets/people03.png";
+import facebook from "../assets/facebook.svg";
+import instagram from "../assets/instagram.svg";
+import linkedin from "../assets/linkedin.svg";
+import twitter from "../assets/twitter.svg";
+import airbnb from "../assets/airbnb.png";
+import binance from "../assets/binance.png";
+import coinbase from "../assets/coinbase.png";
+import dropbox from "../assets/dropbox.png";
+import send from "../assets/Send.svg";
+import shield from "../assets/Shield (1).svg";
+import star from "../assets/Star.svg";
+export const navLinks: { id: string; title: string }[] = [
   {
     id: "home",
     title: "Home",
@@ -31,7 +31,12 @@ export const navLinks: {id: string, title:string}[] = [
   },
 ];
 
-export const features: {id: string, icon: string, title: string, content: string}[] = [
+export const features: {
+  id: string;
+  icon: string;
+  title: string;
+  content: string;
+}[] = [
   {
     id: "feature-1",
     icon: star,
@@ -55,7 +60,13 @@ export const features: {id: string, icon: string, title: string, content: string
   },
 ];
 
-export const feedback = [
+export const feedback: {
+  id: string;
+  content: string;
+  name: string;
+  title: string;
+  img: string;
+}[] = [
   {
     id: "feedback-1",
     content:
